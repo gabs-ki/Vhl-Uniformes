@@ -1,10 +1,18 @@
+.containerGeral {
+    overflow-x: hidden;
+}
+
+/* 1º Seção Home */
+
 .containerHome {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
+    background: rgb(245, 125, 0);
+    background: linear-gradient(90deg, rgba(245, 125, 0, 1) 76%, rgba(254, 194, 1, 1) 100%);
 }
 
 .containerHome__backgroundHome {
@@ -21,21 +29,16 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 48px;
-    background-color: var(--background-header-dark-color);
+    height: 15vh;
+    z-index: 10;
 }
 
-.bordaGradienteHome {
-    position: fixed;
-    width: 100vw;
-    height: 2px;
-    background: rgb(245, 125, 0);
-    background: linear-gradient(90deg, rgba(245, 125, 0, 1) 0%, rgba(254, 194, 1, 1) 100%);
-    top: 150px;
+.cabecalhoHome__logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 48px;
 }
 
 .logoHome {
@@ -45,65 +48,59 @@
 }
 
 .iconeMenuHome {
-    width: 60px;
-    height: 60px;
+    position: absolute;
+    left: 92%;
+    top: 30%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 13px;
     cursor: pointer;
-    background: rgb(245, 125, 0);
-    background: linear-gradient(90deg, rgba(245, 125, 0, 1) 0%, rgba(254, 194, 1, 1) 100%);
+    background-color: #282829;
+    border: #F58200 1px solid;
 }
 
-.containerHome__secaoInicialHome {
-    display: flex;
+.iconeMenu {
+    width: 70%;
+    height: 70%;
+}
+
+.fundoColoridoHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 90%;
+    background: rgb(25, 25, 25);
+    background: linear-gradient(90deg, rgba(25, 25, 25, 1) 0%, rgba(47, 47, 50, 1) 100%);
+}
+
+/* 2ª Seção Informações */
+
+.containerInformacoes {
+    height: 200vh;
     width: 100vw;
-    height: 100%;
-    align-items: center;
-    padding: 56px;
-    gap: 24px;
 }
 
-.secaoInicialHome__informacoesHome {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+/* 3º Seção Catalogo */
+
+.containerCatalogo {
+    height: 100vh;
+    width: 100vw;
 }
 
-.tituloHome {
-    color: #E7E7E7;
-    font-family: Montserrat;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+/* 4º Seção Contatos */
+
+.containerContatos {
+    height: 50vh;
+    width: 100vw;
 }
 
-.descricaoHome {
-    color: #C9C9C9;
-    font-family: Montserrat;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
-.textoGrifadoHome {
-    background: linear-gradient(90deg, #F90 29.07%, #FEC201 54.07%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Montserrat;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
+/* Botao com contraste */
 
 .botaoContatoHome {
     border-radius: 10px;
@@ -126,75 +123,43 @@
     -webkit-text-fill-color: transparent;
 }
 
-.textoBotaoContatoHome {
-    font-family: Montserrat;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    background: linear-gradient(90deg, #F58000 0%, #FEC201 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 100ms;
-}
+/**/
 
-.secaoInicialHome__imagensHome {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 80%;
-    padding-top: 64px;
-    gap: 12px;
-}
-
-.backgroundeImageHomeUm {
-    width: 60%;
-    height: 70%;
-
-}
-
-.backgroundeImageHomeDois {
-    width: 40%;
-    height: 32%;
-
-}
-
-.backgroundeImageHomeTres {
-    width: 40%;
-    height: 45%;
-
-}
-
-.imagemHomeUm {
-    width: 100%;
-    height: 100%;
-}
-
-.imagemHomeDois {
-    width: 100%;
-    height: 100%;
-}
-
-.imagemHomeTres {
-    width: 100%;
-    height: 100%;
-}
+/**/
 
 .barraNavegacaoMenu {
-    position: fixed;
-    z-index: 10;
-    background: linear-gradient(347deg, #1A1A1A 6.84%, #323232 97.86%);
+    position: absolute;
+    z-index: 5;
+    background: rgba(34, 34, 35, 0.80);
+    backdrop-filter: blur(5px);
     height: 100vh;
     width: 25vw;
+    top: 0;
+    left: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    transition: margin 1000ms;
+    margin: 0 0 0 500px;
+}
+
+.barraNavegacaoMenuAberta {
+    position: absolute;
+    z-index: 5;
+    background: rgba(34, 34, 35, 0.80);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 25vw;
+    top: 0;
     left: 75%;
     display: flex;
     flex-direction: column;
     padding: 48px;
     transition: all 1000ms;
+    margin-left: 0;
 }
+
+/**/
 
 .barraNavegacaoMenu__opcaoFecharAbrir {
     display: flex;
@@ -213,7 +178,7 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-   
+
 }
 
 .barraNavegacaoMenu__opcoesDeNavegacao {
@@ -247,4 +212,12 @@
 
 .opcaoHome:hover {
     border-bottom: var(--white-color) 2px solid;
+}
+
+.linhaUm {
+    width: 99vw;
+    position: absolute;
+    z-index: 2;
+    left: -5px;
+    top: 80%;
 }
