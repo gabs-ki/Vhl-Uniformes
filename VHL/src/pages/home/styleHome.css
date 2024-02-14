@@ -76,29 +76,366 @@
     height: 90%;
     background: rgb(25, 25, 25);
     background: linear-gradient(90deg, rgba(25, 25, 25, 1) 0%, rgba(47, 47, 50, 1) 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    justify-content: space-between;
 }
+
+.informacoesHome {
+    display: flex;
+    flex-direction: column;
+}
+
+.indicadorHome {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+}
+
+.decoracaoHomeUm {
+    position: absolute;
+    top: 0;
+    left: 58%;
+}
+
+.decoracaoHomeDois {
+    position: absolute;
+    top: 80%;
+    left: 0;
+}
+
+/* Texto Grifado */
+
+.textoGrifadoHome {
+    position: relative;
+    top: 10px;
+}
+
+/**/
+
+.textoNormalHomeUm {
+    color: white;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    padding-bottom: 5px;
+}
+
+.textoNormalHomeDois {
+    color: white;
+    line-height: 0px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.botoesHome {
+    display: flex;
+    padding-left: 6%;
+    padding-top: 6%;
+    gap: 10%;
+    align-items: center;
+}
+
+.botaoHomePrincipal {
+    height: 50px;
+    width: 13vw;
+    background: rgb(245, 125, 0);
+    background: linear-gradient(90deg, rgba(245, 125, 0, 1) 76%, rgba(254, 194, 1, 1) 100%);
+    border: inherit;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botaoHomeSecundario {
+    cursor: pointer;
+    height: 80%;
+}
+
+.imagensIlustrativaHome {
+    width: 68%;
+    height: auto;
+    position: absolute;
+    left: 55%;
+    
+}
+
+.redesSociaisHome {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top: 0;
+    left: 92%;
+    z-index: 9;
+    gap: 3%;
+    height: 80%;
+    width: 5%;
+}
+
+.linhaRedesUm {
+    width: 1px;
+    height: 15%;
+    background-color: #282829;
+}
+
+.linhaRedesDois {
+    width: 1px;
+    height: 15%;
+    background-color: #282829;
+}
+
+.conhecaRedes {
+    text-align: center;
+}
+
+.rede {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+}
+
+.rede:hover {
+    color: #FBA601;
+    border: 1px solid #FBA601;
+    background-color: #1d1d1d;
+}
+
+/**/
 
 /* 2ª Seção Informações */
 
 .containerInformacoes {
-    height: 200vh;
+    height: 240vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.containerInformacoes__conteudoIdeias {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.linhaInformacoesUm {
+    width: 50vw;
+    height: 1px;
+    background-color: #F57D00;
+    position: relative;
+    top: 10px;
+}
+
+.conteudoIdeias {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.homemSegundoParagrafo {
+    width: 50%;
+    left: -130px;
+    position: relative;
+}
+
+.textoInformacoesUm {
+    font-size: 1.50rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: white;
+}
+
+.containerInformacoes__conteudoVisita {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    gap: 72px;
+}
+
+.conteudoVisita {
+    width: 40%;
+} 
+
+.linhaVisitaUm {
+    width: 40vw;
+    height: 1px;
+    background-color: #F57D00;
+    position: relative;
+    top: 15px;
+}
+
+.textoInformacoesVisita {
+    font-size: 1.50rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: white;
+}
+
+.botaoAgendarVisita {
+    height: 50px;
+    width: 13vw;
+    background: rgb(245, 125, 0);
+    background: linear-gradient(90deg, rgba(245, 125, 0, 1) 76%, rgba(254, 194, 1, 1) 100%);
+    border: inherit;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+}
+
+.decoracaoInformacoesUm {
+    position: absolute;
+    top: 90%;
+    left: 94%;
+}
+
+.decoracaoInformacoesDois {
+    position: absolute;
+    top: 190%;
+    left: 0;
+}
+
+.decoracaoInformacoesTres {
+    position: absolute;
+    width: 9%;
+    top: 220%;
+    left: 90%;
+}
+
+.decoracaoInformacoesQuatro {
+    position: absolute;
+    height: 20%;
+    top: 315%;
+    left: 65%;
 }
 
 /* 3º Seção Catalogo */
 
 .containerCatalogo {
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
+    display: flex;
+    position: relative;
 }
+
+.imagemFundoCatalogo {
+    position: relative;
+    left: 18%;
+    top: 10%;
+    height: 85%;
+}
+
+.containerCatalogo__tituloCatalogo {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tituloCatalogo {
+    position: relative;
+    top: 0%;
+    left: 0;
+}
+
+.containerCatalogo__listaDeProdutos {
+    width: 90%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    overflow: hidden;
+}
+
+/**/
 
 /* 4º Seção Contatos */
 
 .containerContatos {
     height: 50vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FBA601;
 }
 
+.containerContatos__conteudoContatos {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conteudoContatos_conhecaNosMais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+}
+
+.linhaContatosUm {
+    width: 20vw;
+    height: 1px;
+    background-color: #FBA601;
+}
+
+.linhaContatosDois {
+    width: 20vw;
+    height: 1px;
+    background-color: #FBA601;
+}
+
+.contatosRedes {
+    font-size: 1.50rem;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FBA601;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+}
+
+.icone:hover {
+    color: #1d1d1d;
+    border: 1px solid #FBA601;
+    background-color: #FBA601;
+}
 
 /* Botao com contraste */
 
@@ -135,7 +472,7 @@
     height: 100vh;
     width: 25vw;
     top: 0;
-    left: 75%;
+    left: 85%;
     display: flex;
     flex-direction: column;
     padding: 48px;
@@ -214,10 +551,39 @@
     border-bottom: var(--white-color) 2px solid;
 }
 
+/* Linhas Divisórias */
+
 .linhaUm {
     width: 99vw;
     position: absolute;
     z-index: 2;
-    left: -5px;
+    left: -10px;
     top: 80%;
+}
+
+.linhaDois {
+    width: 99vw;
+    position: absolute;
+    z-index: 2;
+    left: -10px;
+    top: 330%;
+}
+
+.linhaTres {
+    width: 99vw;
+    position: absolute;
+    z-index: 2;
+    left: -10px;
+    top: 440%;
+}
+
+/**/
+.image {
+    position: relative;
+    left: 40%;
+    height: 1000px;
+}
+
+.image-post {
+    position: relative;
 }

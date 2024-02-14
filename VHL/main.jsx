@@ -9,6 +9,7 @@ import Home from './src/pages/home/Home'
 import { PageProvider } from './src/data/hooks/context/PageContext'
 
 import '../VHL/src/ui/styles/global.css'
+import '../VHL/src/pages/home/carousel.scss'
 
 const router = createBrowserRouter([
   {
