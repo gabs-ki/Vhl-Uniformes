@@ -109,6 +109,7 @@
 
 .textoGrifadoHome {
     position: relative;
+    width: 40vw;
     top: 10px;
 }
 
@@ -151,7 +152,8 @@
     transition: ease-in-out 200ms;
 }
 
-.botaoHomePrincipal:hover, .botaoHomeSecundario:hover {
+.botaoHomePrincipal:hover,
+.botaoHomeSecundario:hover {
     transform: scale(1.10);
 }
 
@@ -166,7 +168,7 @@
     height: auto;
     position: absolute;
     left: 55%;
-    
+
 }
 
 .redesSociaisHome {
@@ -217,6 +219,190 @@
     color: #FBA601;
     border: 1px solid #FBA601;
     background-color: #1d1d1d;
+}
+
+@media(max-width: 400px) {
+
+    .containerHome {
+        height: 110vh;
+    }
+
+    .fundoColoridoHome {
+        height: 110vh;
+    }
+
+    .informacoesHome {
+        height: 60%;
+        top: 40%;
+        left: 5%;
+        position: relative;
+        z-index: 10;
+    }
+
+    .textoGrifadoHome {
+        width: 60vw;
+    }
+
+    .textoNormalHomeUm {
+        font-size: 1rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .textoNormalHomeDois {
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .botoesHome {
+        flex-direction: column;
+        padding-left: 6%;
+        padding-top: 0%;
+        gap: 10%;
+        align-items: center;
+    }
+
+    .botaoHomePrincipal {
+        width: 100%;
+    }
+
+    .imagensIlustrativaHome {
+        width: 150%;
+        position: absolute;
+        height: auto;
+        left: -25%;
+        top: 10%;
+        opacity: 100%;
+    }
+
+    .iconeMenuHome {
+        left: 80%;
+    }
+
+    .redesSociaisHome {
+        left: 87%;
+        font-size: 0.75rem;
+    }
+
+    .decoracaoHomeUm {
+        display: none;
+    }
+
+    .decoracaoHomeDois {
+        display: none;
+    }
+
+    .containerHome__backgroundHome {
+        height: 100%;
+    }
+
+    .decoracaoInformacoesUm {
+        display: none;
+    }
+
+    .decoracaoInformacoesQuatro {
+        display: none;
+    }
+
+    .linhaUm {
+        display: none;
+    }
+
+    .indicadorHome {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .containerHome {
+        height: 110vh;
+    }
+
+    .fundoColoridoHome {
+        height: 110vh;
+    }
+
+    .informacoesHome {
+        height: 60%;
+        top: 40%;
+        left: 5%;
+        position: relative;
+        z-index: 10;
+    }
+
+    .textoGrifadoHome {
+        width: 60vw;
+    }
+
+    .textoNormalHomeUm {
+        font-size: 1rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .textoNormalHomeDois {
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .botoesHome {
+        flex-direction: column;
+        padding-left: 6%;
+        padding-top: 0%;
+        gap: 10%;
+        align-items: center;
+    }
+
+    .botaoHomePrincipal {
+        width: 100%;
+    }
+
+    .imagensIlustrativaHome {
+        width: 150%;
+        position: absolute;
+        height: auto;
+        left: -25%;
+        top: 10%;
+        opacity: 100%;
+    }
+
+    .iconeMenuHome {
+        left: 80%;
+    }
+
+    .redesSociaisHome {
+        left: 87%;
+        font-size: 0.75rem;
+    }
+
+    .decoracaoHomeUm {
+        display: none;
+    }
+
+    .decoracaoHomeDois {
+        display: none;
+    }
+
+    .containerHome__backgroundHome {
+        height: 100%;
+    }
+
+    .decoracaoInformacoesUm {
+        display: none;
+    }
+
+    .decoracaoInformacoesQuatro {
+        display: none;
+    }
+
+    .linhaUm {
+        display: none;
+    }
+
+    .indicadorHome {
+        display: none;
+    }
 }
 
 /**/
@@ -278,7 +464,7 @@
 
 .conteudoVisita {
     width: 40%;
-} 
+}
 
 .linhaVisitaUm {
     width: 40vw;
@@ -340,6 +526,138 @@
     left: 65%;
 }
 
+@media(max-width: 400px) {
+    .containerInformacoes__conteudoIdeias {
+        width: 100%;
+    }
+
+    .conteudoIdeias {
+        width: 100%;
+        font-size: 1rem;
+        position: relative;
+        left: 0%;
+        text-align: center;
+        top: 10%;
+    }
+
+    .tituloIdeias {
+        width: 110%;
+    }
+
+    .homemPrimeiroParagrafo {
+        width: 50%;
+        top: -10%;
+        left: 5%;
+        position: relative;
+    }
+
+    .textoInformacoesUm {
+        font-size: 1rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .containerInformacoes__conteudoVisita {
+        width: 100%;
+    }
+
+    .homemSegundoParagrafo {
+        width: 60%;
+        top: -20%;
+        left: 0;
+        position: relative;
+    }
+
+    .conteudoVisita {
+        width: 100%;
+        font-size: 1rem;
+        position: relative;
+        left: -30%;
+        text-align: center;
+    }
+
+    .tituloVisita {
+        width: 110%;
+    }
+
+    .textoInformacoesVisita {
+        font-size: 1rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .botaoAgendarVisita {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media(max-width: 500px) {
+    .containerInformacoes__conteudoIdeias {
+        width: 100%;
+    }
+
+    .conteudoIdeias {
+        width: 100%;
+        font-size: 1rem;
+        position: relative;
+        left: 0%;
+        text-align: center;
+        top: 10%;
+    }
+
+    .tituloIdeias {
+        width: 110%;
+    }
+
+    .homemPrimeiroParagrafo {
+        width: 50%;
+        top: -10%;
+        left: 5%;
+        position: relative;
+    }
+
+    .textoInformacoesUm {
+        font-size: 1rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .containerInformacoes__conteudoVisita {
+        width: 100%;
+    }
+
+    .homemSegundoParagrafo {
+        width: 60%;
+        top: -20%;
+        left: 0;
+        position: relative;
+    }
+
+    .conteudoVisita {
+        width: 100%;
+        font-size: 1rem;
+        position: relative;
+        left: -30%;
+        text-align: center;
+    }
+
+    .tituloVisita {
+        width: 110%;
+    }
+
+    .textoInformacoesVisita {
+        font-size: 1rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .botaoAgendarVisita {
+        width: 100%;
+        left: 0;
+    }
+}
+
 /* 3º Seção Catalogo */
 
 .containerCatalogo {
@@ -383,7 +701,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .listaItems {
@@ -455,6 +773,90 @@
     border: #282829 1px solid;
 }
 
+@media(max-width: 400px) {
+
+    .imagemFundoCatalogo {
+        height: 70%;
+        top: 10%;
+        left: -40%;
+    }
+
+    .containerCatalogo__listaDeProdutos {
+        width: 100%;
+        left: 0;
+    }
+
+    .listaItems {
+        width: 100%;
+    }
+
+    .botaoEsquerda {
+        position: relative;
+        z-index: 100;
+        left: 60%;
+        background-color: #282829;
+        border-radius: 10px;
+        padding: 4px;
+    }
+
+    .botaoDireita {
+        position: relative;
+        z-index: 100;
+        left: -60%;
+        background-color: #282829;
+        border-radius: 10px;
+        padding: 4px;
+    }
+
+    .botaoItem {
+        width: 150%;
+        position: relative;
+        left: -20%;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .imagemFundoCatalogo {
+        height: 70%;
+        top: 10%;
+        left: -40%;
+    }
+
+    .containerCatalogo__listaDeProdutos {
+        width: 100%;
+        left: 0;
+    }
+
+    .listaItems {
+        width: 100%;
+    }
+
+    .botaoEsquerda {
+        position: relative;
+        z-index: 100;
+        left: 75%;
+        background-color: #282829;
+        border-radius: 10px;
+        padding: 4px;
+    }
+
+    .botaoDireita {
+        position: relative;
+        z-index: 100;
+        left: -75%;
+        background-color: #282829;
+        border-radius: 10px;
+        padding: 4px;
+    }
+
+    .botaoItem {
+        width: 150%;
+        position: relative;
+        left: -20%;
+    }
+}
+
 /**/
 
 /* 4º Seção Contatos */
@@ -520,6 +922,46 @@
     color: #1d1d1d;
     border: 1px solid #FBA601;
     background-color: #FBA601;
+}
+
+@media(max-width: 400px) {
+    .containerContatos {
+        width: 100%;
+        text-align: center;
+    }
+
+    .containerContatos__conteudoContatos {
+        width: 100%;
+    }
+
+    .conteudoContatos_conhecaNosMais {
+        width: 100%;
+    }
+
+    .linhaDois,
+    .linhaTres {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .containerContatos {
+        width: 100%;
+        text-align: center;
+    }
+
+    .containerContatos__conteudoContatos {
+        width: 100%;
+    }
+
+    .conteudoContatos_conhecaNosMais {
+        width: 100%;
+    }
+
+    .linhaDois,
+    .linhaTres {
+        display: none;
+    }
 }
 
 /* Botao com contraste */

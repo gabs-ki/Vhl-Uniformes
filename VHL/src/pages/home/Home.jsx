@@ -267,7 +267,7 @@ function Home() {
 
                         <div className='conteudoVisita'>
 
-                            <img src={TituloSegundoParagrafo} alt="" />
+                            <img className='tituloVisita' src={TituloSegundoParagrafo} alt="" />
                             <div className='linhaVisitaUm'></div>
                             <p className='textoInformacoesVisita'>Para colabores e clientes que estão perto de nós, podemos fazer uma visita!</p>
                             <a target='_blank' href="https://api.whatsapp.com/send?phone=5511947850224"><button className='botaoAgendarVisita'>AGENDE UMA VISITA</button></a>
@@ -289,6 +289,7 @@ function Home() {
                 <img className='linhaDois' src={LinhaUm} alt="" />
 
                 <section className='containerCatalogo' id='catalogo'>
+                    
                     <img className='imagemFundoCatalogo' src={FundoCatalogo} alt="" />
 
                     <div className='containerCatalogo__tituloCatalogo'>
