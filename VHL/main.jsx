@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider, Route, Navigate } from 'react-rout
 // ROTAS - Página Inicial
 
 import Home from './src/pages/home/Home'
+import SobreNos from './src/pages/aboutUs/SobreNos'
 
 import { PageProvider } from './src/data/hooks/context/PageContext'
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />
+  },
+  {
+    path: '/sobre-nos',
+    element: <SobreNos />
   }
 ])
 

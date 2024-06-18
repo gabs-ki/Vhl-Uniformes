@@ -481,11 +481,35 @@
     color: white;
 }
 
+.botaoConhecaNos {
+    height: 50px;
+    width: 13vw;
+    background: rgb(245, 125, 0);
+    background: linear-gradient(90deg, rgba(245, 125, 0, 1) 40%, rgba(254, 194, 1, 1) 100%);
+    border: inherit;
+    border-radius: 10px;
+    font-size: small;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    transition: ease-in-out 200ms;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botaoConhecaNos:hover {
+    transform: scale(1.10);
+}
+
 .botaoAgendarVisita {
     height: 50px;
     width: 13vw;
     background: rgb(245, 125, 0);
-    background: linear-gradient(90deg, rgba(245, 125, 0, 1) 76%, rgba(254, 194, 1, 1) 100%);
+    background: linear-gradient(90deg, rgba(245, 125, 0, 1) 40%, rgba(254, 194, 1, 1) 100%);
     border: inherit;
     border-radius: 10px;
     font-family: Montserrat;

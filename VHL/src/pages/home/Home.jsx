@@ -30,6 +30,7 @@ import BotaoEsquerda from './images/botaoEsquerda.svg'
 import SetaCategoria from './images/setaCategoria.svg'
 
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as Links } from 'react-router-dom'
 
 function Home() {
 
@@ -44,6 +45,8 @@ function Home() {
     const [direction, setDirection] = useState('')
 
     const [arrayItems, setArrayItems] = useState([])
+
+    const [localS, setLocalS] = useState(localStorage.getItem('caminho'))
 
     const [images, setImages] = useState([
         { img: Macacao, desc: 'Uniformes Profissionais', link: 'https://api.whatsapp.com/send?phone=5511947850224&text=Bom%20dia!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Uniformes%20Profissionais.' },
@@ -113,11 +116,20 @@ function Home() {
     }
 
     useEffect(() => {
+        if (localS == 'home') {
+            window.scrollTo(0,0)
+        } else if (localS == 'informacoes') {
+            window.scrollTo(0, 900)
+        } else if (localS == 'catalogo') {
+            window.scrollTo(0, 2800)
+        } else if (localS == 'contatos') {
+            window.scrollTo(0, 4000)
+        }
+        
+    }, [localS])
 
-    }, [])
 
     return (
-
 
         <>
 
@@ -169,6 +181,11 @@ function Home() {
                                 >
                                     INFORMAÇÕES
                                 </Link>
+                                <Links className='opcaoHome'
+                                    to='/sobre-nos'
+                                >
+                                    SOBRE NÓS
+                                </Links>
                                 <Link className='opcaoHome'
                                     to='catalogo'
                                     spy={true}
@@ -255,6 +272,13 @@ function Home() {
                             <div className='linhaInformacoesUm'></div>
                             <p className='textoInformacoesUm'>A VHL Uniformes é uma empresa de confecção de uniformes profissionais para todos os segmentos, e vem se solidificando no mercado. Nos dedicamos à Confiança, Agilidade, Transparência, Qualidade, Respeito e Compromisso.</p>
 
+                            <div className='botoesHome'>
+
+                                <Links className='botaoConhecaNos'
+                                    to='sobre-nos'
+                                >CONHEÇA-NOS MELHOR</Links>
+                            </div>
+
                         </div>
 
                         <img className='homemPrimeiroParagrafo' src={HomemPrimeiroParagrafo} alt="" />
@@ -289,7 +313,7 @@ function Home() {
                 <img className='linhaDois' src={LinhaUm} alt="" />
 
                 <section className='containerCatalogo' id='catalogo'>
-                    
+
                     <img className='imagemFundoCatalogo' src={FundoCatalogo} alt="" />
 
                     <div className='containerCatalogo__tituloCatalogo'>
