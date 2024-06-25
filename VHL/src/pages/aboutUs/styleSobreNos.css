@@ -1,0 +1,67 @@
+.containerSobreNos {
+    overflow-x: hidden;
+}
+
+.secaoConteudoSobreNos {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8%;
+    padding-bottom: 4%;
+}
+
+.containerInformacoesSobreNos {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.containerInformacoesSobreNos__conteudoVisao {
+    width: 30%;
+}
+
+.containerInformacoesSobreNos__conteudoMissao {
+    width: 30%;
+}
+
+.containerInformacoesSobreNos__conteudoValores {
+    width: 30%;
+}
+
+.iconeVisao,
+.iconeMissao,
+.iconeValores {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.tituloVisao,
+.tituloMissao,
+.tituloValores {
+    background: rgb(245, 127, 0);
+    background: linear-gradient(90deg, rgba(245, 127, 0, 1) 0%, rgba(251, 169, 1, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.textoVisao,
+.textoMissao,
+.textoValores {
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.linhaUmSobreNos {
+    width: 99vw;
+    position: absolute;
+    z-index: 2;
+    left: -10px;
+    top: 100%;
+}
