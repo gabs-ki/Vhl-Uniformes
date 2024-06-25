@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './styleSobreNos.css'
 import BackgroundHome from './images/backgroundHome.svg'
 import LogoVHL from './images/logoVHL.svg'
@@ -18,6 +18,14 @@ function SobreNos() {
 
   const [barraAberta, setBarraAberta] = useState(true)
 
+  const [localS, setLocalS] = useState(localStorage.getItem('botaoSobreNos'))
+
+  useEffect(() => {
+    if(localS == 'indo') {
+      window.scrollTo(0,0)
+    }
+  },[localS])
+
   return (
     <>
 
@@ -30,7 +38,9 @@ function SobreNos() {
           <header className='containerHome__cabecalhoHome'>
 
             <div className='cabecalhoHome__logo'>
-              <img className='logoHome' src={LogoVHL} alt="" />
+              <a onClick={() => {
+                localStorage.setItem('caminho', 'home')
+              }} href="/"><img className='logoHome' src={LogoVHL} alt="" /></a>
             </div>
 
             <i onClick={() => {

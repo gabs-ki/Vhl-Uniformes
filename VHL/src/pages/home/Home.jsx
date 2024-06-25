@@ -117,7 +117,7 @@ function Home() {
 
     useEffect(() => {
         if (localS == 'home') {
-            window.scrollTo(0,0)
+            window.scrollTo(0, 0)
         } else if (localS == 'informacoes') {
             window.scrollTo(0, 900)
         } else if (localS == 'catalogo') {
@@ -125,7 +125,7 @@ function Home() {
         } else if (localS == 'contatos') {
             window.scrollTo(0, 4000)
         }
-        
+
     }, [localS])
 
 
@@ -142,7 +142,9 @@ function Home() {
                     <header className='containerHome__cabecalhoHome'>
 
                         <div className='cabecalhoHome__logo'>
-                            <img className='logoHome' src={LogoVHL} alt="" />
+                            <a onClick={() => {
+                                localStorage.setItem('caminho', 'home')
+                            }} href="/"><img className='logoHome' src={LogoVHL} alt="" /></a>
                         </div>
 
                         <i onClick={() => {
@@ -252,7 +254,7 @@ function Home() {
 
                         <a target='_blank' href="https://api.whatsapp.com/send?phone=5511947850224"><div className='rede WhatsApp'><i class="fab fa-whatsapp"></i></div></a>
                         {/* <a href=""><div className='rede Facebook'><i class="fab fa-facebook-f"></i></div></a> */}
-                        {/* <a href=""><div className='rede Instagram'><i class="fab fa-instagram"></i></div></a> */}
+                        <a href="https://www.instagram.com/vhl.uniformes/"><div className='rede Instagram'><i class="fab fa-instagram"></i></div></a>
 
                         <div className='linhaRedesDois'></div>
 
@@ -276,7 +278,11 @@ function Home() {
 
                                 <Links className='botaoConhecaNos'
                                     to='sobre-nos'
-                                >CONHEÇA-NOS MELHOR</Links>
+                                    onClick={() => {
+                                        localStorage.setItem('botaoSobreNos', 'indo')
+                                    }}
+                                >CONHEÇA-NOS MELHOR
+                                </Links>
                             </div>
 
                         </div>
