@@ -299,7 +299,7 @@ function Home() {
 
                             <img className='tituloVisita' src={TituloSegundoParagrafo} alt="" />
                             <div className='linhaVisitaUm'></div>
-                            <p className='textoInformacoesVisita'>Agende conosco uma visita ao seu estabelecimento, onde poderemos conhecer melhor vocês colaboradores!</p>
+                            <p className='textoInformacoesVisita'>Agende conosco uma visita ao seu estabelecimento, onde poderemos conhecer melhor vocês clientes!</p>
                             <a target='_blank' href="https://api.whatsapp.com/send?phone=5511947850224"><button className='botaoAgendarVisita'>AGENDE UMA VISITA</button></a>
 
                         </div>
