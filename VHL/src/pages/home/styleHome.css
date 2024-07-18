@@ -51,7 +51,7 @@
     position: absolute;
     left: 92%;
     top: 30%;
-    z-index: 10;
+    z-index: 1001;
     width: 40px;
     height: 40px;
     display: flex;
@@ -252,6 +252,7 @@
     .textoNormalHomeDois {
         font-size: 1rem;
         line-height: normal;
+        width: 90%;
     }
 
     .botoesHome {
@@ -310,6 +311,10 @@
 
     .indicadorHome {
         display: none;
+    }
+
+    .containerHome__cabecalhoHome {
+        z-index: 1000;
     }
 }
 
@@ -344,6 +349,7 @@
     .textoNormalHomeDois {
         font-size: 1rem;
         line-height: normal;
+        width: 90%;
     }
 
     .botoesHome {
@@ -402,6 +408,10 @@
 
     .indicadorHome {
         display: none;
+    }
+
+    .containerHome__cabecalhoHome {
+        z-index: 1000;
     }
 }
 
@@ -614,6 +624,11 @@
         width: 100%;
         left: 0;
     }
+
+    .botaoConhecaNos {
+        width: 100%;
+        
+    }
 }
 
 @media(max-width: 500px) {
@@ -628,6 +643,17 @@
         left: 0%;
         text-align: center;
         top: 10%;
+    }
+
+    .botoesHome {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .botaoConhecaNos {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
     .tituloIdeias {
@@ -859,7 +885,7 @@
     .botaoEsquerda {
         position: relative;
         z-index: 100;
-        left: 75%;
+        left: 60%;
         background-color: #282829;
         border-radius: 10px;
         padding: 4px;
@@ -868,10 +894,18 @@
     .botaoDireita {
         position: relative;
         z-index: 100;
-        left: -75%;
+        left: -60%;
         background-color: #282829;
         border-radius: 10px;
         padding: 4px;
+    }
+
+    .botaoDireita img{
+        height: 7vh;
+    }
+
+    .botaoEsquerda img{
+        height: 7vh;
     }
 
     .botaoItem {
@@ -1013,11 +1047,11 @@
 
 /**/
 
-/**/
+/* Barra de Navegação com o menu*/
 
 .barraNavegacaoMenu {
     position: absolute;
-    z-index: 5;
+    z-index: 1000;
     background: rgba(34, 34, 35, 0.80);
     backdrop-filter: blur(5px);
     height: 100vh;
@@ -1033,7 +1067,7 @@
 
 .barraNavegacaoMenuAberta {
     position: absolute;
-    z-index: 5;
+    z-index: 1000;
     background: rgba(34, 34, 35, 0.80);
     backdrop-filter: blur(5px);
     height: 100vh;
@@ -1045,6 +1079,66 @@
     padding: 48px;
     transition: all 1000ms;
     margin-left: 0;
+}
+
+@media(max-width: 1200px) {
+    .barraNavegacaoMenuAberta {
+        left: 60%;
+        width: 100vw;
+        z-index: 100;
+    }
+
+   
+}
+
+@media(max-width: 1000px) {
+    .barraNavegacaoMenuAberta {
+        left: 60%;
+        width: 100vw;
+        z-index: 100;
+    }
+
+   
+}
+
+@media(max-width: 800px) {
+    .barraNavegacaoMenuAberta {
+        left: 0%;
+        width: 100vw;
+        z-index: 100;
+    }
+
+   
+}
+
+@media(max-width: 700px) {
+    .barraNavegacaoMenuAberta {
+        left: 0%;
+        width: 100vw;
+        z-index: 100;
+    }
+
+   
+}
+
+@media(max-width: 600px) {
+    .barraNavegacaoMenuAberta {
+        left: 0%;
+        width: 100vw;
+        z-index: 100;
+    }
+
+   
+}
+
+@media(max-width: 500px) {
+    .barraNavegacaoMenuAberta {
+        left: 0%;
+        width: 100vw;
+        z-index: 100;
+    }
+
+    
 }
 
 /**/
