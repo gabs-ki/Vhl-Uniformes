@@ -42,9 +42,10 @@
 }
 
 .logoHome {
-    width: 100px;
-    height: 50px;
+    width: 160px;
+    height: 70px;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 .iconeMenuHome {
